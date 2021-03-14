@@ -1,3 +1,10 @@
 {
-    "blah":"blah"
+    "goal": "Be Awesome",
+    "motivations": "Cool Hair",
+    "monthlyGoals": [
+        "bunny", 
+        "cookie",
+        "glitter" 
+    ],
+    "weeklyGoal": true
 }

@@ -86,3 +86,7 @@ input.d-width {
     background-color: rgba(255, 255, 255, 0.2);
     width: 20%;
 }
+
+form {
+    text-align: left;
+}
