@@ -4,11 +4,14 @@
   "description": "An app to track your goals",
   "main": "index.html",
   "scripts": {
-    "start": "nw ."
+    "start": "nw .",
+    "lint": "eslint --no-fix **/*.js"
   },
   "author": "Ania Bennett",
   "license": "(MIT)",
   "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-tjw-base": "^1.0.0",
     "nw": "^0.51.0-sdk"
   }
 }
