@@ -12,42 +12,63 @@
     <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
 
     <title>Goal Tracker</title>
+  </head>
 
-<div class="head">
-    <div class="goals">Goal <br><input type="text"></div>
-    <div class="motivation">Motivation/s <br><input type="text"></div>  
-</div>
 
-</head>
-<body>
-<br>
-<div class="month">
-<div class="monthly-goals">Monthly Goals</div>
-<section id="textarea" contenteditable="true">
-  <ul>
-      <li>Goal: </li>
-      <li>Goal: </li>
-      <li>Goal: </li>
-      <li>Goal: </li>
-  </ul>
-  </section></div>
-  
+  <body>
+    <div class="head">
+      <div class="goals">
+        Goal<br>
+        <input 
+          type="text" 
+          id="enterGoal" 
+          placeholder="Enter Goal"
+        >
+      </div>
+      <div class="motivation">
+        Motivation/s<br>
+        <input
+          id="enterMotivation"
+          type="text"
+          placeholder="Enter Motivation"
+          value=""
+        >
+      </div>  
+    </div>
+    <div class="month">
+      <div class="monthly-goals">Monthly Goals</div>
+      <section id="textarea">
+        <ul>
+          <li>Goal: <input type="text" id="g1"> </li>
+          <li>Goal: <input type="text" id="g2"> </li>
+          <li>Goal: <input type="text" id="g3"> </li>
+          <li>Goal: <input type="text"> </li>
+        </ul>
+      </section>
+    </div>
   </section>
-<br>
-<div class="weekly-goals">Weekly Goals
-<div class="week">1 2 3 4 5<input type="checkbox"</div>
-</div>
-<br>
-<div class="daily-goals">Daily Goals
-<div class="day"><input class="d-width" type="text" readonly>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 
-  22 23 24 25 26 27 28 29 30 31</div>
-  <form name="frm">
-<tr>
-<td><input type="text" name="count" value="0"></td>
-<td><INPUT type="button" value="ADD" name="add" onClick="incrementCount()"></td>
-<td><INPUT type="button" value="Remove" name="remove" onClick="decCount()"></td>
-</tr></form>
+
+  <div class="weekly-goals">Weekly Goals
+   <div class="week">1 2 3 4 5<input type="checkbox">
+   </div>
   </div>
 
-</body>
+  <div class="daily-goals">Daily Goals
+   <div class="day">
+    <input 
+      class="d-width" 
+      type="text" 
+      readonly
+    >1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
+  </div>
+    <form name="frm">
+      <tr>
+        <td><input type="text" name="count" value="0"></td>
+        <td><INPUT type="button" value="ADD" name="add" onClick="incrementCount()"></td>
+        <td><INPUT type="button" value="Remove" name="remove" onClick="decCount()"></td>
+      </tr>
+    </form>
+    </div>
+
+  </body>
 </html>
