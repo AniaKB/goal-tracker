@@ -1,6 +1,6 @@
 head, body {
-    background: rgb(139, 32, 95);
-    background-image: linear-gradient(to right, rgb(228, 109, 208) , rgb(156, 212, 245));
+    background: rgb(139, 32, 95, 0.3);
+    background-image: linear-gradient(to right, rgb(228, 109, 208, 0.3) , rgb(156, 212, 245, 0.75));
     font-family: 'Londrina Solid', cursive;
     font-size: 20px;
     padding: 25px;
@@ -72,10 +72,31 @@ head, body {
     opacity:1;
 }
 
-div.day {
+table,
+tr,
+th,
+td {
+    border: 1px solid #F00;
+}
+
+table.day {
     text-align:left;
-    font-size: 2.3vw;
+    font-size: 1.85vw;
     white-space: nowrap;
+}
+
+input[type="checkbox"] {
+    display: block;
+    font-size: 1.95vw;
+    white-space: nowrap;
+    text-align: left;
+    width: 0.9em;
+    height: 0.9em;
+    background-color: white;
+    border-radius: 20%;
+    vertical-align: middle;
+    border: 1px solid rgb(112, 72, 117);
+    outline: none;
 }
 
 input[type=text] {
@@ -88,7 +109,7 @@ input.d-width {
     border: none;
     border-bottom: 1px solid black;
     background-color: rgba(255, 255, 255, 0.2);
-    width: 20%;
+    width: 13%;
 }
 
 form {

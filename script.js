@@ -2,6 +2,24 @@ const fs = require('fs');
 
 const goalFile = './goals.json';
 
+const app = Vue.createApp({
+  data: function() {
+    return {
+      checkboxes: [false, false, false, true, false, true, true]
+    };
+  },
+  methods: {
+    reload: function () {
+      window.nw.Window.get().reload();
+    }
+  },
+  computed: {
+    nw: function () {
+      return window.nw;
+    }
+  }
+}).mount('#app')
+
 function loadSettings () {
   try {
     if (fs.existsSync(goalFile)) {
